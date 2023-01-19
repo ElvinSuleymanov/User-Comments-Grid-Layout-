@@ -1,0 +1,122 @@
+img {
+  width: 35px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(0deg, 0%, 81%);
+  margin: 50px 100px;
+}
+
+.name {
+  color: #fff;
+}
+
+.paragraph {
+  font-size: 18px;
+  margin: 15px 0 10px;
+  z-index: 2;
+}
+
+.position {
+  color: hsl(0deg, 0%, 81%);
+}
+
+.bg_icon {
+  border: none;
+  border-radius: 0%;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 14%;
+  z-index: 0;
+}
+
+.comment {
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.user_info {
+  width: 200px;
+  display: grid;
+  grid-template-areas: "img content" "img content2";
+  font-size: 10px;
+}
+.user_info img {
+  grid-area: img;
+  margin-right: -15px;
+  margin-top: 5px;
+}
+.user_info .name {
+  grid-area: content;
+}
+.user_info .position {
+  grid-area: content2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed";
+}
+html .main {
+  background-color: hsl(0deg, 0%, 81%);
+  display: grid;
+  grid-template-rows: auto 300px;
+  grid-template-areas: "first first second third" "4th 5th 5th third";
+  gap: 25px;
+}
+html .main .user_comment {
+  background-color: hsl(263deg, 55%, 52%);
+  grid-area: first;
+  position: relative;
+}
+html .main .user_comment .paragraph_first {
+  color: #fff;
+}
+html .main .user_comment .paragraph_second {
+  color: hsl(0deg, 0%, 81%);
+}
+html .main .user_comment-second {
+  background-color: hsl(217deg, 19%, 35%);
+  grid-area: second;
+}
+html .main .user_comment-second .paragraph_first {
+  color: #fff;
+}
+html .main .user_comment-second .paragraph_second {
+  color: hsl(0deg, 0%, 81%);
+}
+html .main .user_comment-third {
+  background-color: #fff;
+  grid-area: third;
+}
+html .main .user_comment-4th {
+  background-color: #fff;
+  grid-area: 4th;
+}
+html .main .user_comment-5th {
+  background-color: hsl(219deg, 29%, 14%);
+  grid-area: 5th;
+  grid-column: 2/4;
+}
+html .main .user_comment-5th .paragraph_first {
+  color: #fff;
+}
+html .main .user_comment-5th .paragraph_second {
+  color: hsl(0deg, 0%, 81%);
+}
+
+@media (max-width: 600px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */
